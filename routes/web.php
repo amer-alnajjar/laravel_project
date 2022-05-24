@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//templat latest view
+Route::get('temp-latest', function () {
+    return view('template.latest');
+});
+
+//templat view
+Route::get('temp', function () {
+    return view('template.template');
+});
 
 //Middleware (auth)
 Route::middleware('auth')->group(function () {
